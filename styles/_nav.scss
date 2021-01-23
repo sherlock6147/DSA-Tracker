@@ -1,0 +1,110 @@
+@import 'colors';
+@import 'fonts';
+nav{
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    padding: 10px;
+    padding-top: 20px;
+    background-color: $nav-color;
+    ul{
+        margin-right: 10vw;
+        margin-left: 10vw;
+        
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        @media only screen and (max-width: 700px){
+            margin-right: 5vw;
+            margin-left: 5vw;    
+        }
+        li{
+            color: $on-nav-color;
+            text-align: center;
+            a{
+                text-decoration: none;
+                font-size: 22px;
+                font-weight: 600;
+                font-family: $heading;
+                padding: 5px;
+                &:hover{
+                    background-color: rgba(255,255,255,0.1);
+                }
+            }
+        }
+    }
+}
+.logo{
+    flex: 0;
+    a{
+        img{
+            height: 50px;
+            width: 50px;
+            @media only screen and (max-width: 700px){
+                height: 40px;
+                width: 40px;   
+            }    
+        }
+        &:hover{
+            background-color: inherit;
+        }
+    }
+    @media only screen and (max-width: 700px){
+        flex: 1;   
+    }
+}
+.menu{
+    flex: 0;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    cursor: pointer;
+    img{
+        height: 50px;
+        width: 50px;
+        @media only screen and (max-width: 700px){
+            height: 40px;
+            width: 40px;   
+        }
+    }
+    @media only screen and (max-width: 700px){
+        flex: 1;
+    }
+}
+.link{
+    flex: 1;
+    @media only screen and (max-width: 700px){
+        display: none;    
+    }
+}
+.navigation{
+    position: sticky;
+    right: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: $nav-color;
+    color: $on-nav-color;
+    ul{
+        list-style: none;
+
+       li{
+           a{
+               text-decoration: none;
+               
+           }
+       } 
+    }
+    
+}
+.invisible{
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }

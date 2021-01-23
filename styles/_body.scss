@@ -1,0 +1,11 @@
+@import 'colors';
+body{
+    background-color: $body-bg-color;
+    color: $on-body-bg-color;
+}
+main{
+    padding-right: 10vw;
+    padding-left: 10vw;
+    padding-top: 20px;
+    text-align: center;
+}

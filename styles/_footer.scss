@@ -1,0 +1,9 @@
+@import 'colors';
+footer{
+    padding-top: 10px;
+    margin: auto;
+    text-align: center;
+    min-height: 10vh;
+    vertical-align: baseline;
+    background-color: $nav-color;
+}
