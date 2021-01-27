@@ -1,7 +1,7 @@
 import openpyxl
 import json
 #pah of file
-pathOfFile = ("Files/FINAL450 DSA.xlsx")
+pathOfFile = ("FINAL450 DSA.xlsx")
 # Open the Workbook
 workbook = openpyxl.load_workbook(pathOfFile)
 # Get the sheet
@@ -27,7 +27,7 @@ for i in range(6, 481):
     problem["problemStatement"] = sheet[problemCell].value
     problem["status"] = status
     listOfProblems.append(problem)
-pathForJSONFile = "Outputs/listOfProblems.json"
+pathForJSONFile = "/Outputs/listOfProblems.json"
 outputFile = open(pathForJSONFile, "w")
 json.dump(listOfProblems,outputFile,indent=4)
 print(listOfProblems)
